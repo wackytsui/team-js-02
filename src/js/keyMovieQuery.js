@@ -149,19 +149,19 @@ async function createMarkupKey(data) {
       return `
       <li class="card-set__item" id="${id}">
       <a href='#' id='${id}' class="card-link">
-      <picture>
+       <picture>
                     <source srcset="
-                    https://image.tmdb.org/t/p/w780${markup.poster_path} 1x,
-                   https://image.tmdb.org/t/p/original${markup.poster_path} 2x" media="(min-width: 1280px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w780/${poster_path} 1x,
+                   https://image.tmdb.org/t/p/original/${poster_path} 2x" media="(min-width: 1280px)" type="image/jpeg" />
                     <source srcset="
-                    https://image.tmdb.org/t/p/w342${markup.poster_path} 1x,
-                    https://image.tmdb.org/t/p/w500${markup.poster_path} 2x" media="(min-width: 768px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w342/${poster_path} 1x,
+                    https://image.tmdb.org/t/p/w500/${poster_path} 2x" media="(min-width: 768px)" type="image/jpeg" />
                     <source srcset="
-                    https://image.tmdb.org/t/p/w185${markup.poster_path} 1x,
-                    https://image.tmdb.org/t/p/w342${markup.poster_path} 2x" media="(max-width: 480px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w185/${poster_path} 1x,
+                    https://image.tmdb.org/t/p/w342/${poster_path} 2x" media="(max-width: 480px)" type="image/jpeg" />
          <img id="${id}
           loading="lazy"
-          src="https://image.tmdb.org/t/p/w342${markup.poster_path}"
+          src="https://image.tmdb.org/t/p/w342/${poster_path}"
           alt="${title}"
           class="card-set__img "/>
       </picture>
