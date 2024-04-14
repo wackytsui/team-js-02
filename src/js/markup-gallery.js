@@ -6,17 +6,17 @@ export default function createMarkup(films) {
       <a href='#' id='${film.id}' class="card-link">
       <picture>
                     <source srcset="
-                    ${film.base_url}w780/${film.poster_path} 1x,
-                    ${film.base_url}original/${film.poster_path} 2x" media="(min-width: 1280px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w780/${film.poster_path} 1x,
+                    https://image.tmdb.org/t/p/original/${film.poster_path} 2x" media="(min-width: 1280px)" type="image/jpeg" />
                     <source srcset="
-                    ${film.base_url}w342/${film.poster_path} 1x,
-                    ${film.base_url}w500/${film.poster_path} 2x" media="(min-width: 768px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w342/${film.poster_path} 1x,
+                    https://image.tmdb.org/t/p/w500/${film.poster_path} 2x" media="(min-width: 768px)" type="image/jpeg" />
                     <source srcset="
-                    ${film.base_url}w185/${film.poster_path} 1x,
-                    ${film.base_url}w342/${film.poster_path} 2x" media="(max-width: 480px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w185/${film.poster_path} 1x,
+                    https://image.tmdb.org/t/p/w342/${film.poster_path} 2x" media="(max-width: 480px)" type="image/jpeg" />
         <img id="${film.id}"
           loading="lazy"
-          src="${film.base_url}w342/${film.poster_path}"
+          src="https://image.tmdb.org/t/p/w342/${film.poster_path}"
           alt="${film.title}"
           class="card-set__img "/>
                 </picture>
