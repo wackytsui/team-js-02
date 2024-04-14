@@ -3,17 +3,17 @@
       <a href='#' id='${a}' class="card-link">
        <picture>
                     <source srcset="
-                    http://image.tmdb.org/t/p/w780/${u} 1x,
-                   http://image.tmdb.org/t/p/original/${u} 2x" media="(min-width: 1280px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w780/${u} 1x,
+                   https://image.tmdb.org/t/p/original/${u} 2x" media="(min-width: 1280px)" type="image/jpeg" />
                     <source srcset="
-                    http://image.tmdb.org/t/p/w342/${u} 1x,
-                    http://image.tmdb.org/t/p/w500/${u} 2x" media="(min-width: 768px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w342/${u} 1x,
+                    https://image.tmdb.org/t/p/w500/${u} 2x" media="(min-width: 768px)" type="image/jpeg" />
                     <source srcset="
-                    http://image.tmdb.org/t/p/w185/${u} 1x,
-                    http://image.tmdb.org/t/p/w342/${u} 2x" media="(max-width: 480px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w185/${u} 1x,
+                    https://image.tmdb.org/t/p/w342/${u} 2x" media="(max-width: 480px)" type="image/jpeg" />
          <img id="${a}
           loading="lazy"
-          src="http://image.tmdb.org/t/p/w342/${u}"
+          src="https://image.tmdb.org/t/p/w342/${u}"
           alt="${r}"
           class="card-set__img "/>
       </picture>
@@ -134,4 +134,4 @@
         <p class="empty-library__title">NO MOVIES TO WATCH IN QUEUE!</p>
         <img  class="position" src="" alt="empty library" />
         </div>`;s.innerHTML=t}}l.addEventListener("click",function(t){t.target.classList.contains("description-button__watched")&&p(t),t.target.classList.contains("description-button__queue")&&d(t),t.target.classList.contains("remove-button__watched")&&m(t),t.target.classList.contains("remove-button__queue")&&h(t)})})}();
-//# sourceMappingURL=library.23715e27.js.map
+//# sourceMappingURL=library.3765cc79.js.map
