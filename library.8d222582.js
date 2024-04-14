@@ -102,17 +102,17 @@ function t(t,e,n,i){Object.defineProperty(t,e,{get:n,set:i,enumerable:!0,configu
       <a href='#' id='${t.id}' class="card-link">
       <picture>
                     <source srcset="
-                    ${t.base_url}w780/${t.poster_path} 1x,
-                    ${t.base_url}original/${t.poster_path} 2x" media="(min-width: 1280px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w780/${t.poster_path} 1x,
+                    https://image.tmdb.org/t/p/original/${t.poster_path} 2x" media="(min-width: 1280px)" type="image/jpeg" />
                     <source srcset="
-                    ${t.base_url}w342/${t.poster_path} 1x,
-                    ${t.base_url}w500/${t.poster_path} 2x" media="(min-width: 768px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w342/${t.poster_path} 1x,
+                    https://image.tmdb.org/t/p/w500/${t.poster_path} 2x" media="(min-width: 768px)" type="image/jpeg" />
                     <source srcset="
-                    ${t.base_url}w185/${t.poster_path} 1x,
-                    ${t.base_url}w342/${t.poster_path} 2x" media="(max-width: 480px)" type="image/jpeg" />
+                    https://image.tmdb.org/t/p/w185/${t.poster_path} 1x,
+                    https://image.tmdb.org/t/p/w342/${t.poster_path} 2x" media="(max-width: 480px)" type="image/jpeg" />
         <img id="${t.id}"
           loading="lazy"
-          src="${t.base_url}w342/${t.poster_path}"
+          src="https://image.tmdb.org/t/p/w342/${t.poster_path}"
           alt="${t.title}"
           class="card-set__img "/>
                 </picture>
@@ -134,4 +134,4 @@ function t(t,e,n,i){Object.defineProperty(t,e,{get:n,set:i,enumerable:!0,configu
         <p class="empty-library__title">NO MOVIES TO WATCH IN QUEUE!</p>
         <img  class="position" src="" alt="empty library" />
         </div>`;s.innerHTML=t}}l.addEventListener("click",function(t){t.target.classList.contains("description-button__watched")&&p(t),t.target.classList.contains("description-button__queue")&&d(t),t.target.classList.contains("remove-button__watched")&&m(t),t.target.classList.contains("remove-button__queue")&&h(t)})});
-//# sourceMappingURL=library.b9e0235f.js.map
+//# sourceMappingURL=library.8d222582.js.map
